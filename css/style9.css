@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:
+    Arial, sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+.cv-card {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  width: 95vw;
+  max-width: 1300px;
+  min-height: 85vh;
+  overflow: hidden;
+}
+
+.sidebar {
+  background: linear-gradient(
+    to bottom,
+    #1565c0,
+    #0d3f7a
+  );
+  color: #ffffff;
+  padding: 50px 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar {
+  width: 140px;
+  height: 140px;
+  background-color: #ffffff;
+  color: #1565c0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 46px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.name {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.role {
+  font-size: 16px;
+  opacity: 0.85;
+  margin-bottom: 35px;
+}
+
+.contact-list {
+  list-style: none;
+  text-align: left;
+  font-size: 16px;
+  line-height: 2.2;
+  width: 100%;
+}
+
+.contact-list li {
+  margin-bottom: 10px;
+  word-break: break-all;
+}
+
+.content {
+  min-width: 0;
+  width: 100%;
+  padding: 50px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.section {
+  margin-bottom: 32px;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+.section-title {
+  color: #1565c0;
+  font-size: 22px;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+.section p {
+  font-size: 17px;
+  color: #333333;
+  line-height: 1.7;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.chip {
+  background-color: #e3f0ff;
+  color: #0d3f7a;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.links {
+  font-size: 17px;
+}
+
+.links a {
+  color: #1565c0;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
