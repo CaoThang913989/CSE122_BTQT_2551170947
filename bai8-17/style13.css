@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: #f1f1f1;
+  font-family: Arial, sans-serif;
+}
+
+.clock-app {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 0 0 15px;
+  padding-bottom: 8px;
+  color: #c62828;
+  font-size: 24px;
+  border-bottom: 2px solid #c62828;
+}
+
+.clock {
+  padding: 30px 20px;
+  min-height: 220px;
+  background-color: #000000;
+  border-radius: 18px;
+}
+
+.digits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.digits img {
+  width: 65px;
+  height: 90px;
+  object-fit: contain;
+}
+
+.greeting {
+  margin: 70px auto 0;
+  padding: 25px 15px;
+  background-color: #ffffff;
+  border-radius: 18px;
+  color: #c62828;
+  font-family: Georgia, serif;
+  font-size: 48px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 12px;
+  }
+
+  .clock {
+    padding: 25px 10px;
+  }
+
+  .digits {
+    gap: 3px;
+  }
+
+  .digits img {
+    width: 35px;
+    height: 55px;
+  }
+
+  .greeting {
+    margin-top: 40px;
+    font-size: 30px;
+  }
+}
